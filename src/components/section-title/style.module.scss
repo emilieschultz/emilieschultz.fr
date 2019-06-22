@@ -1,0 +1,15 @@
+@import '../../assets/css/variables';
+@import '~bootstrap/scss/mixins';
+
+.img {
+  margin-bottom: 20px;
+  //width: 100px;
+
+  &.mains {
+    height: 30%;
+  }
+
+  &.crayon {
+    width: 100px;
+  }
+}

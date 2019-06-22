@@ -1,0 +1,27 @@
+@import '../../assets/css/variables';
+@import '~bootstrap/scss/mixins';
+
+.title {
+  color: $primary;
+  font-size: 2rem;
+  padding-top: 50px;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.subtitle {
+  color: $light;
+  margin-bottom: 30px;
+  font-size: 2.4rem;
+
+  &::after {
+    content: ' ';
+    display: block;
+    width: 80px;
+    margin-top: 10px;
+    background-color: $secondary;
+    height: 3px;
+  }
+}

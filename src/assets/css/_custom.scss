@@ -1,0 +1,12 @@
+
+.nav-link.active {
+  border-bottom: 3px solid $orange-100;
+
+  @extend .mb-6;
+}
+
+.nav-link{
+  color: $dark;
+  @extend .px-0;
+  @extend .mx-3;
+}

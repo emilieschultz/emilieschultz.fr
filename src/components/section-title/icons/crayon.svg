@@ -1,0 +1,30 @@
+<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 0 95.9 11.89">
+  <defs>
+    <style>.cls-1{fill:none;stroke:#07161F;stroke-miterlimit:10;}.cls-2{clip-path:url(#clip-path);}.cls-3{fill:#fff;}
+    </style>
+    <clipPath id="clip-path">
+      <path id="_Masque_" data-name="&lt;Masque&gt;" class="cls-1"
+            d="M44.78,2.57,31.05,18.89,8.4,65.64s1.6,4.69,7.38,3.2l23.46-46,1.27-3.5Z"/>
+    </clipPath>
+    <symbol id="pen" data-name="pen" viewBox="0 0 50.66 85.73">
+      <g id="crayon">
+        <path class="cls-1" d="M39.25,9.3s.41,3.59,3.33,1.65"/>
+        <g class="cls-2">
+          <path class="cls-3"
+                d="M40.35,11.05a2.75,2.75,0,0,1-1.26-2.13,5.38,5.38,0,0,1,1.46-3.57A27.3,27.3,0,0,1,43.38,2.2a8.39,8.39,0,0,1,2.94-2A2.68,2.68,0,0,1,47.57,0a2.86,2.86,0,0,1,1,.42,4.13,4.13,0,0,1,2.07,3.35,4.19,4.19,0,0,1-1.24,2.77,23.88,23.88,0,0,1-4.6,3.22C43.46,10.68,42.05,12.13,40.35,11.05Z"/>
+        </g>
+        <path id="_Masque_2" data-name="&lt;Masque&gt;" class="cls-1"
+              d="M44.78,2.57,31.05,18.89,8.4,65.64s1.6,4.69,7.38,3.2l23.46-46,1.27-3.5Z"/>
+        <path class="cls-1" d="M8.4,65.64s-3.67,1.22-1.55,3.29,7.67,2.63,7.67,2.63,3.06-.85,1.26-2.72"/>
+        <path class="cls-1" d="M5,71.65s2.86,5.82,7.23,3.83l2.26-3.92s-7.25-1-8-3.15Z"/>
+        <path class="cls-1" d="M5,71.65,4,73.91.56,81.25s4.61,7.9,8.7,1.44l2.11-5.06.89-2.15"/>
+        <path class="cls-1" d="M4,73.91s1.81,5.44,7.17,4"/>
+        <path class="cls-1" d="M31.44,18.33s1.67,2.46,4.78-1.19l-22,46.8"/>
+        <path class="cls-1" d="M39.24,22.83s-4.35,1.73-3-5.69"/>
+      </g>
+    </symbol>
+  </defs>
+  <title>crayon</title>
+  <use width="50.66" height="85.73" transform="translate(74.37 -35.4) rotate(63.21)" xlink:href="#pen"/>
+</svg>
