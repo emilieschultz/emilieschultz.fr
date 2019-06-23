@@ -7,7 +7,7 @@ import { StyleRoot } from 'radium';
 
 function Studies() {
   return (
-    <div className="bg-dark pb-6">
+    <div id="studies" className="bg-dark pb-6">
       <SectionTitle
         name="Formations"
         iconName="chapeau"

@@ -10,6 +10,14 @@
   border: 1px solid $orange-100;
   color: $light;
   padding: 10px;
-  width: 220px;
+  width: 250px;
   text-align: center;
+}
+
+.iologo {
+  color: $light;
+
+  &:hover {
+    color: $orange-100;
+  }
 }

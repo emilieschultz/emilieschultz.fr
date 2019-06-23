@@ -15,7 +15,7 @@ function Circle({ className, children }) {
 
 function Skills() {
   return (
-    <div className="bg-light pb-6">
+    <div id="skills" className="bg-light pb-6">
       <SectionTitle
         name="Compétences"
         iconName="star"

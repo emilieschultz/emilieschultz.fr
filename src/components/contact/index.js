@@ -12,7 +12,7 @@ import {
 
 function Contact() {
   return (
-    <div className="bg-dark pb-6">
+    <div id="contact" className="bg-dark pb-6">
       <SectionTitle
         name="Contact"
         iconName="phone"
@@ -37,16 +37,44 @@ function Contact() {
           </div>
 
           <div className="d-flex align-items-center justify-content-center my-4">
-            <a href="#" className={styles.downloadLink}>
+            <a
+              href="https://assets.ctfassets.net/rnvnzobusat8/10q1omnpUELJWf9XyedKGh/7fc5842ed1fa33476cf56b3f0bedc558/cv-emilie-schultz-2019.pdf"
+              className={styles.downloadLink}
+              target="_blank"
+            >
               Téléchargez mon CV
             </a>
           </div>
 
-          <div className="row d-flex justify-content-around">
-            <IoLogoFacebook size={50} color="#fff" />
-            <IoLogoInstagram size={50} color="#fff" />
-            <IoLogoLinkedin size={50} color="#fff" />
-            <IoLogoTwitter size={50} color="#fff" />
+          <div className="row d-flex justify-content-between">
+            <a
+              className={styles.iologo}
+              href="https://www.facebook.com/emilie.schultz.92"
+              target="_blank"
+            >
+              <IoLogoFacebook size={30} />
+            </a>
+            <a
+              className={styles.iologo}
+              href="https://www.instagram.com/balnibarbe/"
+              target="_blank"
+            >
+              <IoLogoInstagram size={30} />
+            </a>
+            <a
+              className={styles.iologo}
+              href="https://www.linkedin.com/in/emilie-schultz-977629142/"
+              target="_blank"
+            >
+              <IoLogoLinkedin size={30} />
+            </a>
+            <a
+              className={styles.iologo}
+              href="https://twitter.com/balnibarbe"
+              target="_blank"
+            >
+              <IoLogoTwitter size={30} />
+            </a>
           </div>
         </div>
       </div>

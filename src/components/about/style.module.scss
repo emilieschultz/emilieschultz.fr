@@ -1,2 +1,10 @@
 @import '../../assets/css/variables';
 @import '~bootstrap/scss/mixins';
+
+.nav {
+  color: $light;
+
+  &:hover {
+    color: $orange-100;
+  }
+}

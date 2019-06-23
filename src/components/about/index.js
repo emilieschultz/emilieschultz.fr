@@ -4,7 +4,7 @@ import SectionTitle from '../section-title';
 
 function About() {
   return (
-    <div className="container-fluid">
+    <div id="about" className="container-fluid">
       <div className="row">
         <div className="col-md bg-primary text-center d-flex flex-column justify-content-center align-items-center">
           <SectionTitle name="À propos" iconName="mains" />
