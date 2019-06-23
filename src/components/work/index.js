@@ -37,7 +37,7 @@ function Work() {
                 </Nav.Item>
               ))}
             </Nav>
-            <Tab.Content>
+            <Tab.Content className="mt-6">
               {data.items.map((work, i) => (
                 <Tab.Pane eventKey={i} key={`tab-pane-${work.sys.id}`}>
                   <div className="row">

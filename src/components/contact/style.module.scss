@@ -1,0 +1,15 @@
+@import '../../assets/css/variables';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/utilities';
+
+.p {
+  color: $light;
+}
+
+.downloadLink {
+  border: 1px solid $orange-100;
+  color: $light;
+  padding: 10px;
+  width: 220px;
+  text-align: center;
+}

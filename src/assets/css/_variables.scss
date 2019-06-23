@@ -97,7 +97,17 @@ $theme-colors: map-merge(
                         "warning": $warning,
                         "danger": $danger,
                         "light": $light,
-                        "dark": $dark
+                        "dark": $dark,
+                  "indigo": $indigo,
+                  "indigo-100": $indigo-100,
+                  "indigo-80": $indigo-80,
+                  "indigo-60": $indigo-60,
+                  "indigo-40": $indigo-40,
+                  "orange": $orange,
+                  "orange-100": $orange-100,
+                  "orange-80": $orange-80,
+                  "orange-60": $orange-60,
+                  "orange-40": $orange-40
                 ),
                 $theme-colors
 );

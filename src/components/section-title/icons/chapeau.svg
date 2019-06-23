@@ -1,1 +1,17 @@
-<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 59.56 50.29"><defs><style>.cls-1{fill:none;stroke:#fff;stroke-miterlimit:10;}</style><symbol id="school_hat" data-name="school hat" viewBox="0 0 59.56 50.29"><g id="chapeau"><polygon class="cls-1" points="1.76 4.82 23.96 16.52 57.42 8.08 28.35 0.51 1.76 4.82"/><path class="cls-1" d="M14,14.78l.28,19.51S30.67,49,48.27,32l.37-18L23.48,20.3Z"/><polyline class="cls-1" points="0.69 4.59 0.52 6.99 23.69 19.82 59.06 11.54 59.06 8.1"/><polyline class="cls-1" points="33.03 6.18 10.75 10.27 10.19 43.08"/><polygon class="cls-1" points="10.1 45.14 8.02 49.73 12.18 49.45 10.1 45.14"/></g></symbol></defs><title>chapeau</title><use width="59.56" height="50.29" xlink:href="#school_hat"/></svg>
+<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 0 59.56 50.29">
+  <defs>
+    <style>.cls-1{fill:none;stroke:#fff;stroke-miterlimit:10;}</style>
+    <symbol id="school_hat" data-name="school hat" viewBox="0 0 59.56 50.29">
+      <g id="chapeau">
+        <polygon class="cls-1" points="1.76 4.82 23.96 16.52 57.42 8.08 28.35 0.51 1.76 4.82"/>
+        <path class="cls-1" d="M14,14.78l.28,19.51S30.67,49,48.27,32l.37-18L23.48,20.3Z"/>
+        <polyline class="cls-1" points="0.69 4.59 0.52 6.99 23.69 19.82 59.06 11.54 59.06 8.1"/>
+        <polyline class="cls-1" points="33.03 6.18 10.75 10.27 10.19 43.08"/>
+        <polygon class="cls-1" points="10.1 45.14 8.02 49.73 12.18 49.45 10.1 45.14"/>
+      </g>
+    </symbol>
+  </defs>
+  <title>chapeau</title>
+  <use width="59.56" height="50.29" xlink:href="#school_hat"/>
+</svg>

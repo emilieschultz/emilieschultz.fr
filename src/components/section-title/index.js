@@ -9,6 +9,7 @@ import mainsIcon from './icons/mains.svg';
 import phoneIcon from './icons/phone.svg';
 import rollerIcon from './icons/roller.svg';
 import theIcon from './icons/the.svg';
+import starIcon from './icons/star.svg';
 
 const icons = {
   cartable: cartableIcon,
@@ -18,7 +19,8 @@ const icons = {
   mains: mainsIcon,
   phone: phoneIcon,
   roller: rollerIcon,
-  the: theIcon
+  the: theIcon,
+  star: starIcon
 };
 
 function SectionTitle({ name, iconName, className }) {
