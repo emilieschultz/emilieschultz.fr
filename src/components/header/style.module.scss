@@ -1,5 +1,6 @@
 @import '../../assets/css/variables';
 @import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/utilities';
 
 .title {
   color: $primary;
@@ -23,5 +24,15 @@ p {
     margin-top: 10px;
     background-color: $secondary;
     height: 3px;
+  }
+}
+
+.logo {
+  color: $light;
+
+  @extend .mr-4;
+
+  &:hover {
+    color: $primary;
   }
 }

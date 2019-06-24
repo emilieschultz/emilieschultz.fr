@@ -23,7 +23,7 @@ function Studies() {
           />
           <StudiesTimeline
             date="2018"
-            name="Droit Européen et International"
+            name="Master 1 Droit Européen et International"
             school="Université de Nantes"
           />
           <StudiesTimeline

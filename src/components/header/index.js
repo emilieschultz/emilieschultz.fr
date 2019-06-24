@@ -2,7 +2,13 @@ import React from 'react';
 import styles from './style.module.scss';
 import image from './icones.svg';
 import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
-import { IoMdHome } from 'react-icons/io';
+import {
+  IoMdHome,
+  IoLogoFacebook,
+  IoLogoInstagram,
+  IoLogoTwitter,
+  IoLogoLinkedin
+} from 'react-icons/io';
 
 function Header() {
   const screenHeight =
@@ -10,10 +16,17 @@ function Header() {
     document.documentElement.clientHeight ||
     document.body.clientHeight;
 
+  const screenWidth =
+    window.innerWidth ||
+    document.documentElement.clientWidth ||
+    document.body.clientWidth;
+
+  const height = screenWidth >= 768 ? screenHeight : 'auto';
+
   return (
     <div
       className="Header bg-dark d-flex flex-column"
-      style={{ height: screenHeight }}
+      style={{ height: height }}
     >
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
         <div className="container">
@@ -53,14 +66,45 @@ function Header() {
             <p className="text-white">Bienvenue sur mon site !</p>
           </div>
 
-          <div className="col-md d-flex align-items-center">
+          <div className="col-md my-auto">
             <img className="w-100" src={image} alt="" />
           </div>
 
-          <div className="col-md d-flex align-items-center justify-content-center">
-            <div>
+          <div className="col-md d-sm-flex align-items-center justify-content-around flex-column">
+            <div></div>
+            <div className="d-none d-sm-block">
               <h2 className={styles.subtitle}>Webdesign</h2>
               <h2 className={styles.subtitle}>Graphisme</h2>
+            </div>
+            <div className="d-none d-sm-block ">
+              <a
+                className={styles.logo}
+                href="https://www.facebook.com/emilie.schultz.92"
+                target="_blank"
+              >
+                <IoLogoFacebook size={25} />
+              </a>
+              <a
+                className={styles.logo}
+                href="https://www.instagram.com/balnibarbe/"
+                target="_blank"
+              >
+                <IoLogoInstagram size={25} />
+              </a>
+              <a
+                className={styles.logo}
+                href="https://www.linkedin.com/in/emilie-schultz-977629142/"
+                target="_blank"
+              >
+                <IoLogoLinkedin size={25} />
+              </a>
+              <a
+                className={styles.logo}
+                href="https://twitter.com/balnibarbe"
+                target="_blank"
+              >
+                <IoLogoTwitter size={25} />
+              </a>
             </div>
           </div>
         </div>
