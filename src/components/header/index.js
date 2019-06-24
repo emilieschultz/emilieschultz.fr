@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './style.module.scss';
-import image from './icones.svg';
+
+import profilPic from './header-pic.png';
 import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import {
   IoMdHome,
@@ -58,7 +59,7 @@ function Header() {
 
       <div id="home" className="container flex-grow-1">
         <div className="row h-100">
-          <div className="col-md d-flex flex-column justify-content-end pb-8">
+          <div className="col-md d-flex flex-column justify-content-center pt-8">
             <h1 className={styles.title}>Emilie Schultz</h1>
             <p className="text-white">
               Je suis une étudiante aspirant à devenir webdesigner.
@@ -66,8 +67,12 @@ function Header() {
             <p className="text-white">Bienvenue sur mon site !</p>
           </div>
 
-          <div className="col-md my-auto">
-            <img className="w-100" src={image} alt="" />
+          <div className="col-md d-flex row align-self-end">
+            <img
+              height={600}
+              src={profilPic}
+              alt="photo de profil Emilie Schultz"
+            />
           </div>
 
           <div className="col-md d-sm-flex align-items-center justify-content-around flex-column">

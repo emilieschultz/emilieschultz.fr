@@ -6,7 +6,7 @@ function About() {
   return (
     <div id="about" className="container-fluid">
       <div className="row">
-        <div className="col-md bg-primary text-center d-flex flex-column justify-content-center align-items-center">
+        <div className="col-md bg-primary  p-5 text-center d-flex flex-column justify-content-center align-items-center">
           <SectionTitle name="À propos" iconName="mains" />
         </div>
         <div className="col-md bg-secondary text-light text-justify p-5">
