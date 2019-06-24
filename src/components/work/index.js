@@ -1,11 +1,35 @@
 import React, { useState, useEffect } from 'react';
-import styles from './style.module.scss';
 import SectionTitle from '../section-title';
+import styles from './style.module.scss';
 import WorkImg from '../work-img';
-import { Tab, Nav } from 'react-bootstrap';
+import { Tab, Nav, Modal } from 'react-bootstrap';
 import { client } from '../../lib/contentful';
 
+function getImageUrlsFromWork(work) {
+  if (!work.fields || !work.fields.pictures) {
+    return [];
+  }
+
+  const imagesURLS = work.fields.pictures.map(picture => {
+    const imageSmall = picture.fields.small || picture.fields.large;
+    const imageLarge = picture.fields.large || picture.fields.small;
+    if (!imageSmall && !imageLarge) {
+      return null;
+    }
+
+    return {
+      small: imageSmall.fields,
+      large: imageLarge.fields
+    };
+  });
+
+  return imagesURLS.filter(x => x);
+}
+
 function Work() {
+  const [isModalOpen, setModalState] = useState(false);
+  const [currentImage, setImage] = useState(null);
+
   const [data, setData] = useState(null);
 
   useEffect(() => {
@@ -41,20 +65,18 @@ function Work() {
               {data.items.map((work, i) => (
                 <Tab.Pane eventKey={i} key={`tab-pane-${work.sys.id}`}>
                   <div className="row">
-                    {work.fields &&
-                      work.fields.pictures &&
-                      work.fields.pictures.map(picture => {
-                        const image =
-                          picture.fields.small || picture.fields.large;
-                        if (!image) {
-                          return null;
-                        }
-                        return (
-                          <div className="col-4 mb-4" key={image.sys.id}>
-                            <WorkImg url={image.fields.file.url} />
-                          </div>
-                        );
-                      })}
+                    {getImageUrlsFromWork(work).map(image => (
+                      <div
+                        className="col-4 mb-4"
+                        key={`small-image-${image.small.file.url}`}
+                        onClick={() => {
+                          setModalState(true);
+                          setImage(image.large);
+                        }}
+                      >
+                        <WorkImg url={image.small.file.url} />
+                      </div>
+                    ))}
                   </div>
                 </Tab.Pane>
               ))}
@@ -62,6 +84,17 @@ function Work() {
           </Tab.Container>
         </div>
       </div>
+
+      <Modal show={isModalOpen} onHide={() => setModalState(false)}>
+        <Modal.Header closeButton>
+          <Modal.Title>{currentImage && currentImage.title}</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          {currentImage && (
+            <img src={currentImage.file.url} alt="" style={{ width: '100%' }} />
+          )}
+        </Modal.Body>
+      </Modal>
     </div>
   );
 }

@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from './style.module.scss';
 
 function StudiesTimeline({ date, name, school }) {
   return (

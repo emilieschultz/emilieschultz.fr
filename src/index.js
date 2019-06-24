@@ -7,6 +7,7 @@ import './assets/css/style.scss';
 
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+
 //ne pas toucher
 ReactDOM.render(<App />, document.getElementById('root'));
 

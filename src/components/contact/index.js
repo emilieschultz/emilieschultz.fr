@@ -41,6 +41,7 @@ function Contact() {
               href="https://assets.ctfassets.net/rnvnzobusat8/10q1omnpUELJWf9XyedKGh/7fc5842ed1fa33476cf56b3f0bedc558/cv-emilie-schultz-2019.pdf"
               className={styles.downloadLink}
               target="_blank"
+              rel="noopener noreferrer"
             >
               Téléchargez mon CV
             </a>
@@ -51,6 +52,7 @@ function Contact() {
               className={styles.iologo}
               href="https://www.facebook.com/emilie.schultz.92"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <IoLogoFacebook size={30} />
             </a>
@@ -58,6 +60,7 @@ function Contact() {
               className={styles.iologo}
               href="https://www.instagram.com/balnibarbe/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <IoLogoInstagram size={30} />
             </a>
@@ -65,6 +68,7 @@ function Contact() {
               className={styles.iologo}
               href="https://www.linkedin.com/in/emilie-schultz-977629142/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <IoLogoLinkedin size={30} />
             </a>
@@ -72,6 +76,7 @@ function Contact() {
               className={styles.iologo}
               href="https://twitter.com/balnibarbe"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <IoLogoTwitter size={30} />
             </a>
