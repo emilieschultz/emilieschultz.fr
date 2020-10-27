@@ -64,9 +64,32 @@ CardSkills.args = {
 
 export const CardList1 = TemplateSmall(CardList).bind({});
 CardList1.args = {
-  title: 'Qui suis-je ?',
+  title: 'Mes compétences créatives',
+  backgroundColor: 'purple',
+  titleColor: 'white',
+  textColor: 'white',
+  list: [
+    'Réalisation d’illustrations',
+    'Création de logotypes',
+    'Conception de supports print'
+  ],
+  listColor: 'white'
+};
+
+export const CardList2 = TemplateLarge(CardList).bind({});
+CardList2.args = {
+  title: 'Savoir-être professionnels',
   backgroundColor: 'green',
-  titleColor: 'white'
+  titleColor: 'black',
+  list: [
+    'Capacité d’adaptation',
+    'Gestion du stress',
+    'Polyvalence',
+    'Curiosité',
+    'Autonomie',
+    'Sens de la communication',
+    'Persévérance'
+  ]
 };
 
 // export const Secondary = Template.bind({});

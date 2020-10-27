@@ -35,11 +35,12 @@ export const CardDefault = ({
   </Card>
 );
 
-export const CardList = ({ ...otherProps }) => (
+export const CardList = ({ list, listColor = 'black', ...otherProps }) => (
   <Card {...otherProps}>
-    <ul>
-      <li>Réalisation</li>
-      <li>Création de logotypes</li>
+    <ul className={`${styles.list} ${styles[listColor]}`}>
+      {list.map(element => (
+        <li key={element}>{element}</li>
+      ))}
     </ul>
   </Card>
 );

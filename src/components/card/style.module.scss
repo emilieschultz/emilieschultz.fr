@@ -35,7 +35,7 @@
 }
 
 .title {
-  font-family: 'Montserrat_Alternates', sans-serif;
+  font-family: 'MontserratAlternates-Bold', sans-serif;
   font-size: 16px;
   padding-bottom: 10px;
   display: flex;
@@ -59,6 +59,25 @@
 }
 
 .content {
+  font-family: 'Montserrat-Regular', sans-serif;
+  font-size: 13px;
+
+  &.white {
+    color: white;
+  }
+
+  &.black {
+    color: black;
+  }
+}
+
+.ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.list {
   font-family: 'Montserrat-Regular', sans-serif;
   font-size: 13px;
 
