@@ -8,13 +8,13 @@ export default {
 };
 
 const TemplateSmall = Component => args => (
-  <div style={{ width: '250px' }}>
+  <div style={{ width: '300px' }}>
     <Component {...args} />
   </div>
 );
 
 const TemplateLarge = Component => args => (
-  <div style={{ width: '250px', height: '400px' }}>
+  <div style={{ width: '300px', height: '400px' }}>
     <Component {...args} />
   </div>
 );
@@ -29,35 +29,37 @@ CardAbout.args = {
   titleColor: 'green'
 };
 
-export const CardStudies = TemplateLarge(CardDefault).bind({});
+export const CardStudies = TemplateSmall(CardDefault).bind({});
 CardStudies.args = {
   title: 'Mes formations',
   useChevron: true,
   content:
     'Dans cette section je vous liste les différentes formations que j’ai accompli ces dernières années et qui m’ont permis de devenir qui je suis aujourd’hui.',
-  largeImg: require('./img/profil-pic.png'),
   titleColor: 'white',
   backgroundColor: 'purple',
-  textColor: 'white'
+  textColor: 'white',
+  chevronColor: 'white'
 };
 
 export const CardPortfolio = TemplateLarge(CardDefault).bind({});
 CardPortfolio.args = {
-  title: 'Qui suis-je ?',
+  title: 'Portfolio',
   useChevron: true,
   content:
-    'Si vous souhaitez en apprendre davantage sur moi, sur ma manière de travailler, mes passions et mes objectifs, c’est ici que ça se passe !',
-  largeImg: require('./img/profil-pic.png')
+    'N’hésitez pas à consulter mes créations personnelles. Elles sont présentes dans cette section.',
+  largeImg: require('./img/illustration-portfolio.png'),
+  titleColor: 'purple'
 };
 
 export const CardSkills = TemplateLarge(CardDefault).bind({});
 CardSkills.args = {
-  title: 'Qui suis-je ?',
-  titleColor: 'purple',
+  title: 'Mes compétences',
   useChevron: true,
   content:
-    'Si vous souhaitez en apprendre davantage sur moi, sur ma manière de travailler, mes passions et mes objectifs, c’est ici que ça se passe !',
-  largeImg: require('./img/profil-pic.png')
+    'Je vous énumère ici les outils que je sais utiliser et que j’emploie ainsi qui mes savoir être professionnels.',
+  largeImg: require('./img/illustration-skills.png'),
+  titleColor: 'black',
+  backgroundColor: 'green'
 };
 
 export const CardList1 = TemplateSmall(CardList).bind({});

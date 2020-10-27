@@ -1,10 +1,12 @@
 import React from 'react';
 import styles from './style.module.scss';
+import Chevron from '../chevron';
 
 function Card({
   title,
   children,
   useChevron = false,
+  chevronColor = 'black',
   titleColor = 'green',
   backgroundColor = 'white'
 }) {
@@ -12,7 +14,7 @@ function Card({
     <div className={`${styles.container} ${styles[backgroundColor]}`}>
       <h2 className={`${styles.title} ${styles[titleColor]}`}>
         {title}
-        {!!useChevron && <img src={require('./img/chevron.svg')} alt="" />}
+        {!!useChevron && <Chevron color={chevronColor} />}
       </h2>
       {children}
     </div>
