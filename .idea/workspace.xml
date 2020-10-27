@@ -2,21 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="988943fa-4e40-4b06-96d7-334a95d46285" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Montserrat/Montserrat-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Montserrat/Montserrat-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Montserrat/OFL.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Montserrat_Alternates/MontserratAlternates-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Montserrat_Alternates/OFL.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/card/card.stories.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/card/img/chevron.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/card/img/profil-pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/card/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/card/style.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.storybook/preview.js" beforeDir="false" afterPath="$PROJECT_DIR$/.storybook/preview.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/css/_fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/_fonts.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/css/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/card/card.stories.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/card/card.stories.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/card/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/card/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/card/style.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/card/style.module.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,14 +16,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.45649838">
+    <splitter split-orientation="horizontal" split-proportion="0.54347825">
       <split-first>
         <leaf>
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/card/index.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="120">
-                  <caret line="8" column="57" lean-forward="true" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
+                  <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -46,8 +34,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/card/style.module.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="381">
-                  <caret line="26" selection-start-line="21" selection-start-column="6" selection-end-line="26" />
+                <state relative-caret-position="797">
+                  <caret line="62" column="18" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
                 </state>
               </provider>
             </entry>
@@ -59,8 +47,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/card/card.stories.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="97">
-                  <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+                <state relative-caret-position="270">
+                  <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -144,8 +132,8 @@
         <option value="$PROJECT_DIR$/.storybook/preview.js" />
         <option value="$PROJECT_DIR$/src/assets/css/_variables.scss" />
         <option value="$PROJECT_DIR$/src/components/card/style.module.scss" />
-        <option value="$PROJECT_DIR$/src/components/card/index.js" />
         <option value="$PROJECT_DIR$/src/components/card/card.stories.js" />
+        <option value="$PROJECT_DIR$/src/components/card/index.js" />
       </list>
     </option>
   </component>
@@ -206,14 +194,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="card" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="emilieschultz.fr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="emilieschultz.fr" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="card" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="emilieschultz.fr" type="b2602c69:ProjectViewProjectNode" />
@@ -325,26 +305,26 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65922000" />
+    <option name="totallyTimeSpent" value="70235000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18427323" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15965052" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.329927" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32876712" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.26575342" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.26575342" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
@@ -664,25 +644,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/card/style.module.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="26" selection-start-line="21" selection-start-column="6" selection-end-line="26" />
+        <state relative-caret-position="797">
+          <caret line="62" column="18" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/card/index.js">
+    <entry file="file://$PROJECT_DIR$/src/components/card/card.stories.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="57" lean-forward="true" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
+        <state relative-caret-position="270">
+          <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/card/card.stories.js">
+    <entry file="file://$PROJECT_DIR$/src/components/card/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+        <state relative-caret-position="120">
+          <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

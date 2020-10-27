@@ -10,11 +10,27 @@
 
   &:hover {
     background-color: $green;
-    color: #ffffff;
+    color: black;
 
-    .title {
-      color: #ffffff;
-    }
+    //.title {
+    //  color: black;
+    //}
+  }
+
+  &.green {
+    background-color: $green;
+  }
+
+  &.purple {
+    background-color: $purple;
+  }
+
+  &.white {
+    background-color: white;
+  }
+
+  &.black {
+    background-color: black;
   }
 }
 
@@ -24,10 +40,33 @@
   padding-bottom: 10px;
   display: flex;
   justify-content: space-between;
-  color: $green;
+
+  &.green {
+    color: $green;
+  }
+
+  &.purple {
+    color: $purple;
+  }
+
+  &.white {
+    color: white;
+  }
+
+  &.black {
+    color: black;
+  }
 }
 
 .content {
   font-family: 'Montserrat-Regular', sans-serif;
   font-size: 13px;
+
+  &.white {
+    color: white;
+  }
+
+  &.black {
+    color: black;
+  }
 }
