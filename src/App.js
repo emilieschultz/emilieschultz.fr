@@ -1,25 +1,36 @@
 import React from 'react';
-import './App.css';
-import Header from './components/header';
-import About from './components/about';
-import Work from './components/work';
-import Studies from './components/studies';
-import Skills from './components/skills';
-import Contact from './components/contact';
-import Footer from './components/footer';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Sidebar from './layout/sidebar';
+import About from './pages/about';
+import Home from './pages/home';
+import Formations from './pages/formations';
+import Portfolio from './pages/portfolio';
+import Skills from './pages/skills';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <Header />
-      <About />
-      <Work />
-      <Studies />
-      <Skills />
-      <Contact />
-      <Footer />
-    </div>
+    <Router>
+      <div>
+        <Sidebar />
+
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/qui-suis-je">
+            <About />
+          </Route>
+          <Route path="/formations">
+            <Formations />
+          </Route>
+          <Route path="/portfolio">
+            <Portfolio />
+          </Route>
+          <Route path="/competences">
+            <Skills />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
-
-export default App;

@@ -1,0 +1,27 @@
+@import '../../assets/css/variables';
+@import '~bootstrap/scss/mixins';
+
+.aside {
+  width: $aside-width;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 20px 4px 54px 0px rgba(100, 28, 255, 0.1);
+
+  .header {
+    background-color: rgba(0, 248, 0, 0.14);
+  }
+
+  .footer {
+    background-color: #e2edff;
+  }
+
+  .links {
+    margin-top: 50px;
+  }
+}

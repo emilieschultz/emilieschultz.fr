@@ -36,7 +36,7 @@ $grays: map-merge(
                 $grays
 );
 
-
+$background-color: #FAF8FF;
 $blue: #007bff !default;
 $indigo-100: #07161F !default;
 $indigo-80: #0D2A38;
@@ -1140,10 +1140,12 @@ $pre-scrollable-max-height: 340px !default;
 $displays: none, inline, inline-block, block, table, table-row, table-cell, flex, inline-flex !default;
 $overflows: auto, hidden !default;
 $positions: static, relative, absolute, fixed, sticky !default;
-
+$user-selects: all, auto, none !default;
 
 // Printing
 
 $print-page-size: a3 !default;
 $print-body-min-width: map-get($grid-breakpoints, "lg") !default;
 
+// Layout
+$aside-width: 230px;

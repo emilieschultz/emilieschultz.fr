@@ -8,3 +8,17 @@
   @extend .px-0;
   @extend .mx-3;
 }
+
+.content {
+  padding-left: $aside-width;
+}
+
+
+html, body {
+  height: 100%;
+  background-color: $background-color;
+}
+
+#root, #root > div {
+  height: 100%;
+}
