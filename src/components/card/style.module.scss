@@ -1,0 +1,33 @@
+@import '../../assets/css/variables';
+@import '~bootstrap/scss/mixins';
+
+.container {
+  background: white;
+  border-radius: $border-radius;
+  height: 100%;
+  padding: 20px;
+  box-shadow: 0 0 25px 3px rgba(134, 78, 255, 0.2);
+
+  &:hover {
+    background-color: $green;
+    color: #ffffff;
+
+    .title {
+      color: #ffffff;
+    }
+  }
+}
+
+.title {
+  font-family: 'Montserrat_Alternates', sans-serif;
+  font-size: 16px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  color: $green;
+}
+
+.content {
+  font-family: 'Montserrat-Regular', sans-serif;
+  font-size: 13px;
+}
