@@ -1,0 +1,36 @@
+@import '../../assets/css/variables';
+@import '~bootstrap/scss/mixins';
+
+$padding: 100px;
+
+.home {
+  padding: 100px;
+  padding-left: $aside-width + $padding;
+  text-align: justify;
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+  height: 100%;
+  grid-gap: 30px;
+  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.item1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+.item2 {
+  grid-column: 1;
+  grid-row: 2;
+}
+.item3 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.item4 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}

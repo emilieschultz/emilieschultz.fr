@@ -10,7 +10,7 @@ function Card({
   chevronColor = 'black',
   titleColor = 'green',
   backgroundColor = 'white',
-  rightContent
+  rightContent,
 }) {
   return (
     <div
@@ -48,7 +48,7 @@ export const CardDefault = ({
 export const CardList = ({ list, listColor = 'black', ...otherProps }) => (
   <Card {...otherProps}>
     <ul className={`${styles.list} ${styles[listColor]}`}>
-      {list.map(element => (
+      {list.map((element) => (
         <li key={element}>
           <div className={styles.bullet}>
             <Bullet color={listColor} />

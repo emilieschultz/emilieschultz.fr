@@ -4,22 +4,22 @@ import Card, { CardList, CardDefault, CardStudy } from './index';
 
 export default {
   title: 'Components/Card',
-  component: Card
+  component: Card,
 };
 
-const TemplateSmall = Component => args => (
+const TemplateSmall = (Component) => (args) => (
   <div style={{ width: '300px', height: '200px' }}>
     <Component {...args} />
   </div>
 );
 
-const TemplateLarge = Component => args => (
+const TemplateLarge = (Component) => (args) => (
   <div style={{ width: '300px', height: '400px' }}>
     <Component {...args} />
   </div>
 );
 
-const TemplateXLarge = Component => args => (
+const TemplateXLarge = (Component) => (args) => (
   <div style={{ width: '1000px', height: '100px' }}>
     <Component {...args} />
   </div>
@@ -28,11 +28,11 @@ const TemplateXLarge = Component => args => (
 export const CardAbout = TemplateSmall(CardDefault).bind({});
 CardAbout.args = {
   title: 'Qui suis-je ?',
-  useChevron: true, //require('./img/chevron.svg'),
+  useChevron: true,
   content:
     'Si vous souhaitez en apprendre davantage sur moi, sur ma manière de travailler, mes passions et mes objectifs, c’est ici que ça se passe !',
   smallImg: require('./img/profil-pic.png'),
-  titleColor: 'green'
+  titleColor: 'green',
 };
 
 export const CardStudies = TemplateSmall(CardDefault).bind({});
@@ -44,7 +44,7 @@ CardStudies.args = {
   titleColor: 'white',
   backgroundColor: 'purple',
   textColor: 'white',
-  chevronColor: 'white'
+  chevronColor: 'white',
 };
 
 export const CardPortfolio = TemplateLarge(CardDefault).bind({});
@@ -54,7 +54,7 @@ CardPortfolio.args = {
   content:
     'N’hésitez pas à consulter mes créations personnelles. Elles sont présentes dans cette section.',
   largeImg: require('./img/illustration-portfolio.png'),
-  titleColor: 'purple'
+  titleColor: 'purple',
 };
 
 export const CardSkills = TemplateLarge(CardDefault).bind({});
@@ -65,7 +65,7 @@ CardSkills.args = {
     'Je vous énumère ici les outils que je sais utiliser et que j’emploie ainsi qui mes savoir être professionnels.',
   largeImg: require('./img/illustration-skills.png'),
   titleColor: 'black',
-  backgroundColor: 'green'
+  backgroundColor: 'green',
 };
 
 export const CardList1 = TemplateSmall(CardList).bind({});
@@ -77,9 +77,9 @@ CardList1.args = {
   list: [
     'Réalisation d’illustrations',
     'Création de logotypes',
-    'Conception de supports print'
+    'Conception de supports print',
   ],
-  listColor: 'white'
+  listColor: 'white',
 };
 
 export const CardList2 = TemplateLarge(CardList).bind({});
@@ -94,8 +94,8 @@ CardList2.args = {
     'Curiosité',
     'Autonomie',
     'Sens de la communication',
-    'Persévérance'
-  ]
+    'Persévérance',
+  ],
 };
 
 export const CardStudy1 = TemplateXLarge(CardStudy).bind({});
@@ -108,7 +108,7 @@ CardStudy1.args = {
     'Conception et réalisations graphiques - Communication et culture numérique - Conception et réalisation Web - Design d’information - Typographie, calligraphie, lettrage - Arts visuels - Motion Design - Créations graphiques - Projets tutorés',
   content2: 'Université de Strasbourg',
   dateStart: '2020',
-  dateEnd: '2021'
+  dateEnd: '2021',
 };
 
 export const CardStudy2 = TemplateXLarge(CardStudy).bind({});
@@ -121,7 +121,7 @@ CardStudy2.args = {
   content2: 'Université de Strasbourg',
   dateStart: '2018',
   dateEnd: '2020',
-  dateColor: 'white'
+  dateColor: 'white',
 };
 
 export const CardStudy3 = TemplateXLarge(CardStudy).bind({});
@@ -134,7 +134,7 @@ CardStudy3.args = {
   content2: 'Université de Nantes',
   dateStart: '2017',
   dateEnd: '2018',
-  dateColor: 'white'
+  dateColor: 'white',
 };
 
 export const CardStudy4 = TemplateXLarge(CardStudy).bind({});
@@ -147,7 +147,7 @@ CardStudy4.args = {
   content2: 'Université de Nantes',
   dateStart: '2016',
   dateEnd: '2017',
-  dateColor: 'white'
+  dateColor: 'white',
 };
 
 export const CardStudy5 = TemplateXLarge(CardStudy).bind({});
@@ -160,7 +160,7 @@ CardStudy5.args = {
   content2: 'Université de Nantes',
   dateStart: '2014',
   dateEnd: '2016',
-  dateColor: 'white'
+  dateColor: 'white',
 };
 // export const Secondary = Template.bind({});
 // Secondary.args = {
