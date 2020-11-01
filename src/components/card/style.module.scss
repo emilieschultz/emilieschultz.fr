@@ -44,7 +44,7 @@
 }
 
 .title {
-  font-family: 'MontserratAlternates-Bold', sans-serif;
+  font-family: $font-family-sans-serif-title, sans-serif;
   font-size: 16px;
   padding-bottom: 10px;
   display: flex;
@@ -68,7 +68,7 @@
 }
 
 .content2 {
-  font-family: 'Montserrat-Regular', sans-serif;
+  font-family: $font-family-sans-serif, sans-serif;
   font-size: 13px;
 
   &.white {
@@ -81,7 +81,7 @@
 }
 
 .content {
-  font-family: 'Montserrat-Regular', sans-serif;
+  font-family: $font-family-sans-serif, sans-serif;
   font-size: 13px;
   text-wrap: normal;
 
@@ -115,7 +115,7 @@
   li {
     display: flex;
     align-items: center;
-    font-family: 'Montserrat-Regular', sans-serif;
+    font-family: $font-family-sans-serif, sans-serif;
     font-size: 13px;
     list-style: none;
 
@@ -135,7 +135,7 @@
   align-items: center;
   display: flex;
   justify-content: center;
-  font-family: 'MontserratAlternates-Bold', sans-serif;
+  font-family: $font-family-sans-serif-title, sans-serif;
   font-size: 20px;
   padding: 10px;
   border-radius: 10%;

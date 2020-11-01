@@ -1,6 +1,10 @@
 @font-face {
-  font-family: 'Montserrat_Alternates';
+  font-family: 'Montserrat-Alternates-Bold';
   src: local('Montserrat_Alternates'), url("../fonts/Montserrat_Alternates/MontserratAlternates-Bold.ttf") format('ttf');
+}
+@font-face {
+  font-family: 'Montserrat-Alternates-Medium';
+  src: local('Montserrat_Alternates'), url("../fonts/Montserrat_Alternates/MontserratAlternates-Medium.ttf") format('ttf');
 }
 
 @font-face {
