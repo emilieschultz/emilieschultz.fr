@@ -1,6 +1,34 @@
 import React from 'react';
 import styles from './style.module.scss';
-import Card from '../../components/card';
+import Card, { CardList } from '../../components/card';
+
+// CardList1.args = {
+//   title: 'Mes compétences créatives',
+//   backgroundColor: 'purple',
+//   titleColor: 'white',
+//   textColor: 'white',
+//   list: [
+//     'Réalisation d’illustrations',
+//     'Création de logotypes',
+//     'Conception de supports print',
+//   ],
+//   listColor: 'white',
+// };
+//
+// CardList2.args = {
+//   title: 'Savoir-être professionnels',
+//   backgroundColor: 'green',
+//   titleColor: 'black',
+//   list: [
+//     'Capacité d’adaptation',
+//     'Gestion du stress',
+//     'Polyvalence',
+//     'Curiosité',
+//     'Autonomie',
+//     'Sens de la communication',
+//     'Persévérance',
+//   ],
+// };
 
 export default function Skills() {
   return (
