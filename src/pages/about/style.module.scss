@@ -1,0 +1,34 @@
+@import '../../assets/css/variables';
+@import '~bootstrap/scss/mixins';
+
+$padding: 100px;
+$aside-right-width: 230px;
+
+.about {
+  padding: 100px;
+  text-align: justify;
+  padding-right: $padding + $aside-right-width;
+
+  .title {
+    justify-content: space-between;
+    display: flex;
+  }
+
+  .p {
+    margin-top: 40px;
+  }
+
+  .profilImg {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+.asideRight {
+  width: $aside-right-width;
+  background-color: $green; // TODO use var
+  position: fixed;
+  top: -200;
+  bottom: 0;
+  right: 200px;
+}

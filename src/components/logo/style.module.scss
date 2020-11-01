@@ -1,0 +1,7 @@
+@import '../../assets/css/variables';
+@import '~bootstrap/scss/mixins';
+
+.container {
+  padding: 20px;
+  background-color: $secondary;
+}

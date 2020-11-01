@@ -1,0 +1,11 @@
+@import '../../assets/css/variables';
+@import '~bootstrap/scss/mixins';
+
+$padding: 100px;
+
+.skills {
+  padding: 100px;
+  padding-left: $aside-width + $padding;
+  text-align: justify;
+  height: 100%;
+}
