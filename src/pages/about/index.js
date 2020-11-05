@@ -80,7 +80,7 @@ export default function About() {
           <b>nouvelles responsabilités</b>.
         </p>
       </div>
-      <aside className={styles.asideRight}>
+      <aside className={`${styles.asideRight} carousel-h-100`}>
         <Carousel className={styles.carousel}>
           <Carousel.Item>
             <div className={styles.carouselItem}>

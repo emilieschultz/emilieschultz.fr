@@ -35,3 +35,9 @@ html, body {
 .carousel-indicators > li {
   border-radius: 50%;
 }
+
+.carousel-h-100 {
+  .carousel-inner, .carousel-item {
+    height: 100%;
+  }
+}

@@ -34,11 +34,12 @@ $aside-right-width: 280px;
 
   .carousel {
     background-color: $green; // TODO use var
+    height: 100%;
   }
 
   .carouselItem {
     flex-direction: column;
-    height: 600px;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
