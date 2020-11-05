@@ -6,6 +6,7 @@ import profilImg from './profil-pic.png';
 import otter from './otter.png';
 import tournesol from './tournesol.png';
 import water from './water.png';
+import sphinx from './sphinx.png';
 
 export default function About() {
   return (
@@ -105,6 +106,7 @@ export default function About() {
               </p>
             </div>
           </Carousel.Item>
+
           <Carousel.Item>
             <div className={styles.carouselItem}>
               <img src={water} alt="" className="d-block w-100" />
@@ -112,6 +114,15 @@ export default function About() {
                 Si j'étais un élément, je serais l'<b>eau</b>. Symbole d'
                 <b>intuition</b>, de <b>sensibilité</b>. Il prend la forme du
                 contenant dans lequel il se trouve.
+              </p>
+            </div>
+          </Carousel.Item>
+          <Carousel.Item>
+            <div className={styles.carouselItem}>
+              <img src={sphinx} alt="" className="d-block w-100" />
+              <p className={styles.p}>
+                Si j'étais un élément, je serais le <b>sphinx</b>. Symbole de la{' '}
+                <b>réflexion</b> et de la <b>raison</b>
               </p>
             </div>
           </Carousel.Item>
