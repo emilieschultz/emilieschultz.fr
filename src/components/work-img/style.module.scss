@@ -1,2 +1,12 @@
 @import '../../assets/css/variables';
 @import '~bootstrap/scss/mixins';
+
+.container {
+  padding: 20px;
+}
+
+.img {
+  width: 100%;
+  border-radius: 40px;
+  box-shadow: 0 0 25px 3px rgba(134, 78, 255, 0.1);
+}

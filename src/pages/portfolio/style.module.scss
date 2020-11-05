@@ -1,0 +1,18 @@
+@import '../../assets/css/variables';
+@import '~bootstrap/scss/mixins';
+
+$padding: 70px;
+
+.portfolio {
+  padding: 100px;
+  padding-left: $aside-width + $padding;
+  padding-top: 50px;
+  text-align: justify;
+  height: 100%;
+}
+
+.workDescription {
+  font-style: italic;
+  padding: 30px;
+  padding-top: 0;
+}
