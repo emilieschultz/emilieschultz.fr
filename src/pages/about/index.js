@@ -41,14 +41,14 @@ export default function About() {
         </p>
         <p className={styles.p}>
           Selon moi, pour obtenir un design réussi, il est important de
-          <b>communiquer</b> avec son équipe, de savoir <b>être créatif</b> et
-          de <b>tester</b>
+          <b> communiquer</b> avec son équipe, de savoir <b>être créatif</b> et
+          de <b>tester </b>
           encore et encore afin d’obtenir un résultat satisfaisant car la
           solution n’arrive jamais du premier coup.
         </p>
         <p className={styles.p}>
           Je ne perds pas non plus de vue que le produit que je suis en train de
-          designer et un <b>travail collectif</b>. La <b>communication</b> est
+          réaliser est un <b>travail collectif</b>. La <b>communication</b> est
           donc indispensable car le livrable final est assurément élaboré par
           toute une <b>équipe</b>. Je reste donc proche du client, des chefs de
           projets, des commerciaux ainsi que des développeurs. L’objectif est
@@ -56,9 +56,9 @@ export default function About() {
         </p>
         <p className={styles.p}>
           Être <b>designer web</b>, c’est également concevoir une{' '}
-          <b>identité graphique</b>
+          <b>identité graphique </b>
           qui corresponde à l’univers du client. Créer une{' '}
-          <b>interface harmonieuse</b>
+          <b>interface harmonieuse </b>
           qui soit en lien avec le secteur d’activité auquel elle appartient et
           sa cible. Pour être honnête, il s’agit de l’aspect de mon métier que
           je préfère car, avoir une bonne <b>identité visuelle</b> est un atout
