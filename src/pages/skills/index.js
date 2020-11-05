@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './style.module.scss';
-import Card, { CardList } from '../../components/card';
+import { CardList } from '../../components/card';
 
 const skillProps = {
   title: 'Mes compétences créatives',

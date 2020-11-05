@@ -1,0 +1,11 @@
+@import '../../assets/css/variables';
+@import '~bootstrap/scss/mixins';
+
+$padding: 100px;
+
+.studies {
+  padding: 100px;
+  padding-left: $aside-width + $padding;
+  text-align: justify;
+}
+

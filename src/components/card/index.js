@@ -11,6 +11,7 @@ function Card({
   titleColor = 'green',
   backgroundColor = 'white',
   rightContent,
+  style = {},
   linkTo = '',
 }) {
   return (
@@ -18,8 +19,9 @@ function Card({
       className={`${styles.container} ${styles[backgroundColor]} ${
         !!rightContent ? styles.hasRightContent : ''
       }`}
+      style={style}
     >
-      <div>
+      <div className={styles.innerContainer}>
         <h2 className={`${styles.title} ${styles[titleColor]}`}>
           {title}
           {!!useChevron && <Chevron color={chevronColor} />}
@@ -27,7 +29,7 @@ function Card({
         {children}
       </div>
 
-      {!!rightContent && <div>{rightContent}</div>}
+      {!!rightContent && rightContent}
     </div>
   );
 }
@@ -73,8 +75,10 @@ export const CardStudy = ({
   <Card
     {...otherProps}
     rightContent={
-      <div className={`${styles.date} ${styles[dateColor]}`}>
-        {dateEnd} <br /> - <br /> {dateStart}
+      <div className={styles.rightContent}>
+        <div className={`${styles.date} ${styles[dateColor]}`}>
+          {dateEnd} <br /> - <br /> {dateStart}
+        </div>
       </div>
     }
   >
