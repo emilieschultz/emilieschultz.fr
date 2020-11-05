@@ -4,6 +4,7 @@ import styles from './style.module.scss';
 import { Carousel } from 'react-bootstrap';
 import profilImg from './profil-pic.png';
 import otter from './otter.png';
+import tournesol from './tournesol.png';
 
 export default function About() {
   return (
@@ -86,20 +87,20 @@ export default function About() {
             <div className={styles.carouselItem}>
               <img src={otter} alt="" className="d-block w-100" />
               <p className={styles.p}>
-                Si j’étais un animal je serais une loutre. Symbole de l'énergie
-                féminine, de l'<b>efficacité</b>, de la <b>joie</b> et du{' '}
-                <b>partage</b>.
+                Si j’étais un animal je serais une <b>loutre</b>. Symbole de
+                l'énergie féminine, de l'<b>efficacité</b>, de la <b>joie</b> et
+                du <b>partage</b>.
               </p>
             </div>
           </Carousel.Item>
 
           <Carousel.Item>
             <div className={styles.carouselItem}>
-              <img src={otter} alt="" className="d-block w-100" />
+              <img src={tournesol} alt="" className="d-block w-100" />
               <p className={styles.p}>
-                Si j’étais un animal je serais une loutre. Symbole de l'énergie
-                féminine, de l'<b>efficacité</b>, de la <b>joie</b> et du{' '}
-                <b>partage</b>.
+                Si j’étais une fleur, je serais un <b>tournesol</b>. Symbole de{' '}
+                <b>joie</b>, emprunt de <b>positivité</b>, toujours tourné vers
+                le soleil.
               </p>
             </div>
           </Carousel.Item>
