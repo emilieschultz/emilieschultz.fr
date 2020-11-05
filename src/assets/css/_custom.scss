@@ -22,3 +22,16 @@ html, body {
 #root, #root > div {
   height: 100%;
 }
+
+.carousel-control-prev, .carousel-control-next {
+  align-items: flex-end;
+  padding-bottom: 50px;
+}
+
+.carousel-indicators {
+  padding-bottom: 30px;
+}
+
+.carousel-indicators > li {
+  border-radius: 50%;
+}

@@ -11,6 +11,7 @@ function Card({
   titleColor = 'green',
   backgroundColor = 'white',
   rightContent,
+  linkTo = '',
 }) {
   return (
     <div

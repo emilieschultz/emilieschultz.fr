@@ -1080,18 +1080,19 @@ $breadcrumb-border-radius: $border-radius !default;
 
 // Carousel
 
-$carousel-control-color: $white !default;
+$carousel-control-color: $black !default;
 $carousel-control-width: 15% !default;
-$carousel-control-opacity: .5 !default;
+$carousel-control-opacity: 1 !default;
 $carousel-control-hover-opacity: .9 !default;
 $carousel-control-transition: opacity .15s ease !default;
 
-$carousel-indicator-width: 30px !default;
-$carousel-indicator-height: 3px !default;
+$carousel-indicator-width: 10px !default;
+$carousel-indicator-height: 10px !default;
 $carousel-indicator-hit-area-height: 10px !default;
 $carousel-indicator-spacer: 3px !default;
-$carousel-indicator-active-bg: $white !default;
+$carousel-indicator-active-bg: $black !default;
 $carousel-indicator-transition: opacity .6s ease !default;
+$carousel-indicators-border-radius: 6px;
 
 $carousel-caption-width: 70% !default;
 $carousel-caption-color: $white !default;

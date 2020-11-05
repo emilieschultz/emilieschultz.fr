@@ -2,17 +2,12 @@
 @import '~bootstrap/scss/mixins';
 
 $padding: 100px;
-$aside-right-width: 300px;
-
-Content {
-  display: flex;
-  justify-content: space-between;
-}
+$aside-right-width: 280px;
 
 .about {
-  padding: $padding;
+  padding: 100px;
   text-align: justify;
-  /*  padding-right: $padding + $aside-right-width;*/
+  padding-right: $padding + $aside-right-width;
 
   .title {
     justify-content: space-between;
@@ -27,25 +22,34 @@ Content {
   .profilImg {
     height: 100px;
     width: 100px;
-    image-orientation: flip;
   }
 }
 
 .asideRight {
   width: $aside-right-width;
-  background-color: $green; // TODO use var
   position: fixed;
-  bottom: 0;
   top: 0;
+  bottom: 0;
   right: 0;
-  padding: 10px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 
-  .otter {
-    height: 200px;
-    width: 200px;
+  .carousel {
+    background-color: $green; // TODO use var
+  }
+
+  .carouselItem {
+    flex-direction: column;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    img {
+      padding: 20px;
+    }
+    p {
+      padding: 0 50px;
+      padding-bottom: 40px;
+    }
   }
 }

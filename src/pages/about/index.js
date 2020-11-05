@@ -1,7 +1,7 @@
 import React from 'react';
 import Content from '../../layout/content';
 import styles from './style.module.scss';
-
+import { Carousel } from 'react-bootstrap';
 import profilImg from './profil-pic.png';
 import otter from './otter.png';
 
@@ -81,12 +81,39 @@ export default function About() {
         </p>
       </div>
       <aside className={styles.asideRight}>
-        <img src={otter} alt="" className={styles.otter} />
-        <p className={styles.p}>
-          Si j’étais un animal je serais une loutre. Symbole de l'énergie
-          féminine, de l'<b>efficacité</b>, de la <b>joie</b> et du{' '}
-          <b>partage</b>.
-        </p>
+        <Carousel className={styles.carousel}>
+          <Carousel.Item>
+            <div className={styles.carouselItem}>
+              <img src={otter} alt="" className="d-block w-100" />
+              <p className={styles.p}>
+                Si j’étais un animal je serais une loutre. Symbole de l'énergie
+                féminine, de l'<b>efficacité</b>, de la <b>joie</b> et du{' '}
+                <b>partage</b>.
+              </p>
+            </div>
+          </Carousel.Item>
+
+          <Carousel.Item>
+            <div className={styles.carouselItem}>
+              <img src={otter} alt="" className="d-block w-100" />
+              <p className={styles.p}>
+                Si j’étais un animal je serais une loutre. Symbole de l'énergie
+                féminine, de l'<b>efficacité</b>, de la <b>joie</b> et du{' '}
+                <b>partage</b>.
+              </p>
+            </div>
+          </Carousel.Item>
+          <Carousel.Item>
+            <div className={styles.carouselItem}>
+              <img src={otter} alt="" className="d-block w-100" />
+              <p className={styles.p}>
+                Si j’étais un animal je serais une loutre. Symbole de l'énergie
+                féminine, de l'<b>efficacité</b>, de la <b>joie</b> et du{' '}
+                <b>partage</b>.
+              </p>
+            </div>
+          </Carousel.Item>
+        </Carousel>
       </aside>
     </Content>
   );
