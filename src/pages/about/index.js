@@ -5,6 +5,7 @@ import { Carousel } from 'react-bootstrap';
 import profilImg from './profil-pic.png';
 import otter from './otter.png';
 import tournesol from './tournesol.png';
+import water from './water.png';
 
 export default function About() {
   return (
@@ -106,11 +107,11 @@ export default function About() {
           </Carousel.Item>
           <Carousel.Item>
             <div className={styles.carouselItem}>
-              <img src={otter} alt="" className="d-block w-100" />
+              <img src={water} alt="" className="d-block w-100" />
               <p className={styles.p}>
-                Si j’étais un animal je serais une loutre. Symbole de l'énergie
-                féminine, de l'<b>efficacité</b>, de la <b>joie</b> et du{' '}
-                <b>partage</b>.
+                Si j'étais un élément, je serais l'<b>eau</b>. Symbole d'
+                <b>intuition</b>, de <b>sensibilité</b>. Il prend la forme du
+                contenant dans lequel il se trouve.
               </p>
             </div>
           </Carousel.Item>
