@@ -161,3 +161,9 @@
   align-items: center;
   justify-content: center;
 }
+
+.linkTo {
+  &:hover {
+    text-decoration: none;
+  }
+}

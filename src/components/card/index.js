@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './style.module.scss';
 import Chevron from '../chevron';
 import Bullet from '../bullet';
+import { Link } from 'react-router-dom';
 
 function Card({
   title,
@@ -14,24 +15,36 @@ function Card({
   style = {},
   linkTo = '',
 }) {
-  return (
-    <div
-      className={`${styles.container} ${styles[backgroundColor]} ${
-        !!rightContent ? styles.hasRightContent : ''
-      }`}
-      style={style}
-    >
-      <div className={styles.innerContainer}>
-        <h2 className={`${styles.title} ${styles[titleColor]}`}>
-          {title}
-          {!!useChevron && <Chevron color={chevronColor} />}
-        </h2>
-        {children}
-      </div>
+  function Inner() {
+    return (
+      <div
+        className={`${styles.container} ${styles[backgroundColor]} ${
+          !!rightContent ? styles.hasRightContent : ''
+        }`}
+        style={style}
+      >
+        <div className={styles.innerContainer}>
+          <h2 className={`${styles.title} ${styles[titleColor]}`}>
+            {title}
+            {!!useChevron && <Chevron color={chevronColor} />}
+          </h2>
+          {children}
+        </div>
 
-      {!!rightContent && rightContent}
-    </div>
-  );
+        {!!rightContent && rightContent}
+      </div>
+    );
+  }
+
+  if (!!linkTo) {
+    return (
+      <Link to={linkTo} className={styles.linkTo}>
+        <Inner />
+      </Link>
+    );
+  }
+
+  return <Inner />;
 }
 
 export const CardDefault = ({

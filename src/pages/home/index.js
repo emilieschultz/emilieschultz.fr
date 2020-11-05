@@ -13,6 +13,7 @@ const aboutProps = {
     'Si vous souhaitez en apprendre davantage sur moi, sur ma manière de travailler, mes passions et mes objectifs, c’est ici que ça se passe !',
   smallImg: profilPic,
   titleColor: 'green',
+  linkTo: '/qui-suis-je',
 };
 
 const formationProps = {
@@ -24,6 +25,7 @@ const formationProps = {
   backgroundColor: 'purple',
   textColor: 'white',
   chevronColor: 'white',
+  linkTo: '/formations',
 };
 
 const portfolioProps = {
@@ -33,6 +35,7 @@ const portfolioProps = {
     'N’hésitez pas à consulter mes créations personnelles. Elles sont présentes dans cette section.',
   largeImg: porfolioPic,
   titleColor: 'purple',
+  linkTo: '/portfolio',
 };
 
 const skillsProps = {
@@ -43,6 +46,7 @@ const skillsProps = {
   largeImg: skillsPic,
   titleColor: 'black',
   backgroundColor: 'green',
+  linkTo: '/competences',
 };
 
 export default function Skills() {
