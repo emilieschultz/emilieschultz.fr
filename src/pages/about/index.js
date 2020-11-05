@@ -121,8 +121,8 @@ export default function About() {
             <div className={styles.carouselItem}>
               <img src={sphinx} alt="" className="d-block w-100" />
               <p className={styles.p}>
-                Si j'étais un élément, je serais le <b>sphinx</b>. Symbole de la{' '}
-                <b>réflexion</b> et de la <b>raison</b>
+                Si j'étais une créature imaginaire, je serais le <b>sphinx</b>.
+                Symbole de la <b>réflexion</b> et de la <b>raison</b>
               </p>
             </div>
           </Carousel.Item>
