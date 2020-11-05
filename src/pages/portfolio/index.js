@@ -17,7 +17,7 @@ function getImageUrlsFromWork(work) {
     }
 
     return {
-      small: `${media.fields.file.url}?w=200&h=200`,
+      small: `${media.fields.file.url}?w=400&h=400`,
       large: `${media.fields.file.url}?w=1000&h=1000`,
       title: 'test',
     };
