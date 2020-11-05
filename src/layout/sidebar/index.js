@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import styles from './style.module.scss';
 import Logo from '../../components/logo';
 import behance from './icons/behance.svg';
@@ -22,9 +22,9 @@ export default function Sidebar() {
   return (
     <aside className={styles.aside}>
       <div className={styles.header}>
-        <NavLink to={'/'}>
+        <Link className={styles.logo} to={'/'}>
           <Logo />
-        </NavLink>
+        </Link>
 
         <ul className={styles.links}>
           {ROUTES.map((route) => (
@@ -41,7 +41,12 @@ export default function Sidebar() {
         </ul>
       </div>
 
-      <div className={styles.footer}>Footer</div>
+      <div className={styles.footer}>
+        <img src={linkedin} width="20" alt="" />
+        <img src={behance} width="20" alt="" />
+        <img src={dribbble} width="20" alt="" />
+        <img src={instagram} width="20" alt="" />
+      </div>
     </aside>
   );
 }

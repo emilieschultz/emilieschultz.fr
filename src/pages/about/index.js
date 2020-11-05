@@ -14,36 +14,33 @@ export default function About() {
         </h1>
 
         <p className={styles.p}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sodales
-          arcu risus, placerat pellentesque nunc ultrices nec. Aliquam accumsan
-          odio id nibh lobortis, non gravida risus lobortis. Nulla sed euismod
-          nibh. Donec aliquam hendrerit semper. Ut venenatis quam lacus, a
-          bibendum metus interdum at. Suspendisse luctus convallis metus, quis
-          tincidunt ex tincidunt vel. Curabitur molestie ut ligula nec tempor.
-          Nullam vel feugiat diam. Ut rutrum, nisi ut volutpat fermentum, odio
-          magna hendrerit lorem, id consequat tellus enim sit amet risus. Sed
-          sit amet fringilla lacus, sit amet finibus nisl.
+          Pour être plus précise, je suis <b>designer web</b> en alternance. Je
+          me consacre à la fois à mes études et à ma vie professionnelle. Mon
+          métier est de concevoir des <b>interfaces web et mobile</b>. Pour se
+          faire, je me concentre sur l’<b>apparence</b> et le <b>style</b> ainsi
+          qui sur l’<b>ergonomie</b>
+          et le <b>parcours de l’utilisateur</b>. Mon but est que les écrans que
+          je crée soient faciles et agréables à employer.
         </p>
         <p className={styles.p}>
-          Aenean pharetra nulla sed tortor varius venenatis. Suspendisse dapibus
-          pellentesque mi non egestas. Cras volutpat convallis volutpat. Nam
-          varius id tortor quis finibus. Cras consectetur orci aliquam sapien
-          gravida tristique. Maecenas nisi nunc, lobortis sed lorem eu, tempor
-          dictum odio. Proin ac sem at tortor congue mollis non vitae est.
-          Phasellus et nulla nec sem dictum volutpat. Integer turpis sem,
-          lobortis id mi ac, vehicula interdum metus. Donec eros velit,
-          tincidunt vitae risus in, placerat fermentum nunc. Sed et odio ac
-          nulla ornare fringilla. Integer elementum, sem sed varius mattis, nibh
-          ante venenatis justo, sed sodales eros enim fringilla mi. Fusce
-          fringilla gravida luctus. Fusce egestas congue ligula vel fermentum.
-          Nulla mollis sapien mauris, vehicula vulputate quam blandit sit amet.
+          Un des aspect de mon métier est de faire des{' '}
+          <b>recherches utilisateurs</b>. Avant de construire une{' '}
+          <b>interface</b>, je me pose différentes questions ; À qui s’adresse
+          l’interface que je suis en train de réaliser ? Est-ce que l’interface
+          répond aux besoins et attentes de la cible ? L’
+          <b>analyse du besoin</b> fait donc partie intégrante de la{' '}
+          <b>conception d’interface</b>. Afin de comprendre l’utilisateur, je
+          réalise des <b>personae</b> et des <b>ateliers de co-conception</b>{' '}
+          avec les utilisateurs finaux. Mais il existe encore beaucoup d’autre
+          manières, que j’ai hâte d’expérimenter, pour créer des{' '}
+          <b>interfaces toujours plus cohérentes</b>.
         </p>
         <p className={styles.p}>
-          Cras sit amet nisi in odio porttitor consectetur. Cras non fringilla
-          magna. Curabitur luctus porttitor congue. Vestibulum dapibus eleifend
-          nulla vel congue. Vivamus nisl purus, eleifend sit amet blandit non,
-          facilisis at purus. Nam pellentesque interdum vulputate. Nulla
-          efficitur euismod dolor, ac posuere lorem.
+          Selon moi, pour obtenir un design réussi, il est important de
+          <b>communiquer</b> avec son équipe, de savoir <b>être créatif</b> et
+          de <b>tester</b>
+          encore et encore afin d’obtenir un résultat satisfaisant car la
+          solution n’arrive jamais du premier coup.
         </p>
         <p className={styles.p}>
           Vestibulum at nisl vel leo vestibulum bibendum. Nunc tempus laoreet

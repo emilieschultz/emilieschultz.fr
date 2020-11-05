@@ -77,8 +77,8 @@ $colors: map-merge(
                 $colors
 );
 
-$primary: $orange-40 !default;
-$secondary: $indigo-60 !default;
+$primary: $green !default;
+$secondary: $purple !default;
 $success: $green !default;
 $info: $cyan !default;
 $warning: $yellow !default;
@@ -1152,4 +1152,4 @@ $print-page-size: a3 !default;
 $print-body-min-width: map-get($grid-breakpoints, "lg") !default;
 
 // Layout
-$aside-width: 230px;
+$aside-width: 300px;

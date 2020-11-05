@@ -7,17 +7,23 @@
   top: 0;
   bottom: 0;
   left: 0;
-  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   box-shadow: 20px 4px 54px 0px rgba(100, 28, 255, 0.1);
 
+  .logo {
+    background-color: white;
+    color: black;
+  }
+
   .header {
   }
 
   .footer {
-    background-color: #e2edff;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px 30px;
   }
 
   .links {
@@ -40,7 +46,7 @@
     font-family: $font-family-sans-serif-nav, sans-serif;
     display: flex;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 0 30px;
   }
 
   .activenav {
