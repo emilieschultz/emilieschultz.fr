@@ -2,12 +2,17 @@
 @import '~bootstrap/scss/mixins';
 
 $padding: 100px;
-$aside-right-width: 0px;
+$aside-right-width: 300px;
+
+Content {
+  display: flex;
+  justify-content: space-between;
+}
 
 .about {
-  padding: 100px;
+  padding: $padding;
   text-align: justify;
-  padding-right: $padding + $aside-right-width;
+  /*  padding-right: $padding + $aside-right-width;*/
 
   .title {
     justify-content: space-between;
@@ -22,6 +27,7 @@ $aside-right-width: 0px;
   .profilImg {
     height: 100px;
     width: 100px;
+    image-orientation: flip;
   }
 }
 
@@ -29,7 +35,17 @@ $aside-right-width: 0px;
   width: $aside-right-width;
   background-color: $green; // TODO use var
   position: fixed;
-  top: -200;
   bottom: 0;
-  right: 200px;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .otter {
+    height: 200px;
+    width: 200px;
+  }
 }

@@ -3,6 +3,7 @@ import Content from '../../layout/content';
 import styles from './style.module.scss';
 
 import profilImg from './profil-pic.png';
+import otter from './otter.png';
 
 export default function About() {
   return (
@@ -43,32 +44,50 @@ export default function About() {
           solution n’arrive jamais du premier coup.
         </p>
         <p className={styles.p}>
-          Vestibulum at nisl vel leo vestibulum bibendum. Nunc tempus laoreet
-          eros, sed consequat augue vulputate non. Phasellus nec posuere purus,
-          ac consectetur mi. Aenean vel posuere libero. Etiam sit amet justo ac
-          magna rhoncus consequat. Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit. Pellentesque volutpat turpis risus, at porttitor
-          tortor porttitor et. Duis nec nisl tincidunt, fermentum ex ac,
-          malesuada mauris. Fusce nec nunc ut nulla rutrum efficitur. Fusce nec
-          maximus turpis. Aenean pharetra eu ante id faucibus. Duis lobortis,
-          sem vitae ullamcorper consequat, elit quam dapibus urna, eget mollis
-          ipsum diam ac mauris. Integer at dui arcu. Nam placerat, tellus a
-          accumsan fermentum, ex neque tincidunt est, vitae vestibulum mauris
-          tortor sagittis tellus. Quisque at nibh tempus, tincidunt lacus vitae,
-          vestibulum eros.
+          Je ne perds pas non plus de vue que le produit que je suis en train de
+          designer et un <b>travail collectif</b>. La <b>communication</b> est
+          donc indispensable car le livrable final est assurément élaboré par
+          toute une <b>équipe</b>. Je reste donc proche du client, des chefs de
+          projets, des commerciaux ainsi que des développeurs. L’objectif est
+          que nous puissions <b>faire évoluer l’interface tous ensemble</b>.
         </p>
         <p className={styles.p}>
-          Pellentesque id leo commodo, aliquam massa quis, sagittis ligula.
-          Proin tincidunt sem mauris. Vestibulum eget lacus rutrum, finibus
-          lectus vitae, tristique quam. Ut vitae dui viverra, posuere urna ac,
-          ornare mauris. Maecenas fermentum non purus eget volutpat. Cras magna
-          lectus, volutpat sed libero sit amet, suscipit mattis risus. Donec
-          congue condimentum neque, a posuere mauris. Maecenas rutrum eleifend
-          sem. Etiam gravida ipsum orci, id viverra libero vestibulum ut. Nam
-          egestas nibh et dui congue sollicitudin. Integer ac porttitor felis.
+          Être <b>designer web</b>, c’est également concevoir une{' '}
+          <b>identité graphique</b>
+          qui corresponde à l’univers du client. Créer une{' '}
+          <b>interface harmonieuse</b>
+          qui soit en lien avec le secteur d’activité auquel elle appartient et
+          sa cible. Pour être honnête, il s’agit de l’aspect de mon métier que
+          je préfère car, avoir une bonne <b>identité visuelle</b> est un atout
+          majeur pour le client. Elle traduit non seulement l’image et le
+          caractère que l’on souhaite avoir auprès de sa cible mais elle est
+          aussi indispensable si l’on souhaite{' '}
+          <b>se différencier de la concurrence</b>. Il s’agit de laisser libre
+          cours à sa créativité tout en restant cohérent avec l’atmosphère
+          voulue par le client. Pour se faire, je suis en mesure de construire
+          une <b>charte graphique</b> en réalisant des <b>logotypes</b>, en
+          définissant les couleurs, en choisissant la typographie mais par
+          ailleurs, j’aime réaliser des <b>illustrations</b> qui viennent
+          égailler le
+          <b>parcours de l’utilisateur</b>.
+        </p>
+
+        <p className={styles.p}>
+          Finalement, j’aimerais continuer à exercer cette profession dans
+          laquelle je me projette. J’ai à coeur d’en{' '}
+          <b>apprendre davantage chaque jours</b> afin de pouvoir à l’avenir
+          accéder à des postes avec de
+          <b>nouvelles responsabilités</b>.
         </p>
       </div>
-      <aside className={styles.asideRight}></aside>
+      <aside className={styles.asideRight}>
+        <img src={otter} alt="" className={styles.otter} />
+        <p className={styles.p}>
+          Si j’étais un animal je serais une loutre. Symbole de l'énergie
+          féminine, de l'<b>efficacité</b>, de la <b>joie</b> et du{' '}
+          <b>partage</b>.
+        </p>
+      </aside>
     </Content>
   );
 }
