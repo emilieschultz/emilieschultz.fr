@@ -5,6 +5,8 @@ import { Carousel } from 'react-bootstrap';
 import profilImg from './profil-pic.png';
 import otter from './otter.png';
 import tournesol from './tournesol.png';
+import water from './water.png';
+import sphinx from './sphinx.png';
 
 export default function About() {
   return (
@@ -39,14 +41,14 @@ export default function About() {
         </p>
         <p className={styles.p}>
           Selon moi, pour obtenir un design réussi, il est important de
-          <b>communiquer</b> avec son équipe, de savoir <b>être créatif</b> et
-          de <b>tester</b>
+          <b> communiquer</b> avec son équipe, de savoir <b>être créatif</b> et
+          de <b>tester </b>
           encore et encore afin d’obtenir un résultat satisfaisant car la
           solution n’arrive jamais du premier coup.
         </p>
         <p className={styles.p}>
           Je ne perds pas non plus de vue que le produit que je suis en train de
-          designer et un <b>travail collectif</b>. La <b>communication</b> est
+          réaliser est un <b>travail collectif</b>. La <b>communication</b> est
           donc indispensable car le livrable final est assurément élaboré par
           toute une <b>équipe</b>. Je reste donc proche du client, des chefs de
           projets, des commerciaux ainsi que des développeurs. L’objectif est
@@ -54,9 +56,9 @@ export default function About() {
         </p>
         <p className={styles.p}>
           Être <b>designer web</b>, c’est également concevoir une{' '}
-          <b>identité graphique</b>
+          <b>identité graphique </b>
           qui corresponde à l’univers du client. Créer une{' '}
-          <b>interface harmonieuse</b>
+          <b>interface harmonieuse </b>
           qui soit en lien avec le secteur d’activité auquel elle appartient et
           sa cible. Pour être honnête, il s’agit de l’aspect de mon métier que
           je préfère car, avoir une bonne <b>identité visuelle</b> est un atout
@@ -104,13 +106,24 @@ export default function About() {
               </p>
             </div>
           </Carousel.Item>
+
           <Carousel.Item>
             <div className={styles.carouselItem}>
-              <img src={otter} alt="" className="d-block w-100" />
+              <img src={water} alt="" className="d-block w-100" />
               <p className={styles.p}>
-                Si j’étais un animal je serais une loutre. Symbole de l'énergie
-                féminine, de l'<b>efficacité</b>, de la <b>joie</b> et du{' '}
-                <b>partage</b>.
+                Si j'étais un élément, je serais l'<b>eau</b>. Symbole d'
+                <b>intuition</b>, de <b>sensibilité</b>. Il prend la forme du
+                contenant dans lequel il se trouve.
+              </p>
+            </div>
+          </Carousel.Item>
+          <Carousel.Item>
+            <div className={styles.carouselItem}>
+              <img src={sphinx} alt="" className="d-block w-100" />
+              <p className={styles.p}>
+                Si j'étais une créature imaginaire, je serais le <b>sphinx</b>.
+                Parce que je le trouve cool, mais aussi car il symbolise la{' '}
+                <b>quête du savoir</b>.
               </p>
             </div>
           </Carousel.Item>
