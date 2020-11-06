@@ -122,7 +122,8 @@ export default function About() {
               <img src={sphinx} alt="" className="d-block w-100" />
               <p className={styles.p}>
                 Si j'étais une créature imaginaire, je serais le <b>sphinx</b>.
-                Symbole de la <b>réflexion</b> et de la <b>raison</b>
+                Parce que je le trouve cool, mais aussi car il symbolise la{' '}
+                <b>quête du savoir</b>.
               </p>
             </div>
           </Carousel.Item>
