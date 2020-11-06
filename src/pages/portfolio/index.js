@@ -4,6 +4,7 @@ import styles from './style.module.scss';
 import WorkImg from '../../components/work-img';
 import { Tab, Nav, Modal } from 'react-bootstrap';
 import { client } from '../../lib/contentful';
+import ReactMarkdown from 'react-markdown';
 
 function getImageUrlsFromWork(work) {
   console.log(work);
@@ -16,11 +17,16 @@ function getImageUrlsFromWork(work) {
       return null;
     }
 
-    return {
+    const file = {
       small: `${media.fields.file.url}?w=400&h=400`,
       large: `${media.fields.file.url}?w=1000&h=1000`,
-      title: 'test',
+      title: media.fields.title,
+      description: media.fields.description,
     };
+
+    new Image().src = file.large;
+
+    return file;
   });
 
   return imagesURLS.filter((x) => x);
@@ -94,7 +100,14 @@ function Portfolio() {
         </Modal.Header>
         <Modal.Body>
           {currentImage && (
-            <img src={currentImage.large} alt="" style={{ width: '100%' }} />
+            <img
+              src={currentImage.large}
+              alt=""
+              style={{ width: '100%', marginBottom: '20px' }}
+            />
+          )}
+          {currentImage && !!currentImage.description && (
+            <ReactMarkdown>{currentImage.description}</ReactMarkdown>
           )}
         </Modal.Body>
       </Modal>
