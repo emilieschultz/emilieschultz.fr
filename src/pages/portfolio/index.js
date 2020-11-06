@@ -43,7 +43,7 @@ function Portfolio() {
       .getEntries({
         content_type: 'work',
         include: 1,
-        order: 'sys.createdAt',
+        order: 'fields.pos',
       })
       .then((entries) => setData(entries))
       .catch((err) => console.log(err));
