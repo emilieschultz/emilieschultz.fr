@@ -42,10 +42,20 @@ export default function Sidebar() {
       </div>
 
       <div className={styles.footer}>
-        <img src={linkedin} width="20" alt="" />
-        <img src={behance} width="20" alt="" />
-        <img src={dribbble} width="20" alt="" />
-        <img src={instagram} width="20" alt="" />
+        <a
+          href={'https://www.linkedin.com/in/emilie-schultz-977629142/'}
+          target={'_blank'}
+        >
+          {' '}
+          <img src={linkedin} width="20" alt="" />
+        </a>
+        <a href={'https://www.behance.net/emilieschultz'} target={'_blank'}>
+          <img src={behance} width="20" alt="" />
+        </a>
+        <a href={'https://dribbble.com/Balnibarbe'} target={'_blank'}>
+          <img src={dribbble} width="20" alt="" />
+        </a>
+        {/*<img src={instagram} width="20" alt="" />*/}
       </div>
     </aside>
   );

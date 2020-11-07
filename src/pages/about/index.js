@@ -22,7 +22,7 @@ export default function About() {
           me consacre à la fois à mes études et à ma vie professionnelle. Mon
           métier est de concevoir des <b>interfaces web et mobile</b>. Pour se
           faire, je me concentre sur l’<b>apparence</b> et le <b>style</b> ainsi
-          qui sur l’<b>ergonomie</b>
+          qui sur l’<b>ergonomie </b>
           et le <b>parcours de l’utilisateur</b>. Mon but est que les écrans que
           je crée soient faciles et agréables à employer.
         </p>
