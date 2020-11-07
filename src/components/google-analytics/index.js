@@ -1,6 +1,6 @@
 // utils/GoogleAnalytics.js
 import React, { Component } from 'react';
-import ReactGA from 'react-ga';
+import * as ReactGA from 'react-ga';
 import { Route } from 'react-router-dom';
 
 class GoogleAnalytics extends Component {
