@@ -23,7 +23,7 @@ function getImageUrlsFromWork(work) {
       description: media.fields.description,
     };
 
-    new Image().src = file.large;
+    // new Image().src = file.large;
 
     return file;
   });
