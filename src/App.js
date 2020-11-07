@@ -6,13 +6,14 @@ import Home from './pages/home';
 import Formations from './pages/formations';
 import Portfolio from './pages/portfolio';
 import Skills from './pages/skills';
+import GA from './components/google-analytics';
 
 export default function App() {
   return (
     <Router>
       <div>
         <Sidebar />
-
+        {GA.init() && <GA.RouteTracker />}
         <Switch>
           <Route exact path="/">
             <Home />
