@@ -7,7 +7,6 @@ import { client } from '../../lib/contentful';
 import ReactMarkdown from 'react-markdown';
 
 function getImageUrlsFromWork(work) {
-  console.log(work);
   if (!work.fields || !work.fields.medias) {
     return [];
   }
