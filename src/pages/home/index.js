@@ -10,7 +10,7 @@ const aboutProps = {
   title: 'Qui suis-je ?',
   useChevron: true,
   content:
-    'Si vous souhaitez en apprendre davantage sur moi, sur ma manière de travailler, mes passions et mes objectifs, c’est ici que ça se passe !',
+    'Si vous souhaitez en apprendre davantage sur moi, sur ma manière de travailler et mes objectifs, c’est ici que ça se passe !',
   smallImg: profilPic,
   titleColor: 'green',
   linkTo: '/qui-suis-je',
