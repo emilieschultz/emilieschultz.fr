@@ -16,7 +16,7 @@ function getImageUrlsFromWork(work) {
     }
 
     const file = {
-      small: `${media.fields.file.url}?w=400&h=400`,
+      small: `${media.fields.file.url}?w=380&h=380`,
       large: `${media.fields.file.url}?w=1000&h=1000`,
       title: media.fields.title,
       description: media.fields.description,
@@ -79,7 +79,11 @@ function Portfolio({ data }) {
         </div>
       </div>
 
-      <Modal show={isModalOpen} onHide={() => setModalState(false)}>
+      <Modal
+        show={isModalOpen}
+        onHide={() => setModalState(false)}
+        className={styles.modal}
+      >
         <Modal.Header closeButton>
           <Modal.Title>{currentImage && currentImage.title}</Modal.Title>
         </Modal.Header>

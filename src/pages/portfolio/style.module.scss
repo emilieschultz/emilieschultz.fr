@@ -16,3 +16,23 @@ $padding: 70px;
   padding: 30px;
   padding-top: 0;
 }
+
+.modal {
+  background-color: black;
+  :global {
+    .modal-dialog {
+      @include media-breakpoint-up(sm) {
+        max-width: 700px;
+      }
+    }
+
+    .modal-header {
+      border-bottom: 0;
+      padding: 1.3rem 3rem;
+    }
+
+    .modal-body {
+      padding: 0rem 3rem 2rem 3rem;
+    }
+  }
+}
