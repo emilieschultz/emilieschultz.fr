@@ -102,4 +102,14 @@ export const CardStudy = ({
   </Card>
 );
 
+export const CardLogos = ({ logos, ...otherProps }) => (
+  <Card {...otherProps}>
+    <div className={styles.logosContainer}>
+      {logos.map((logo) => (
+        <img src={logo} className={styles.logo}/>
+      ))}
+    </div>
+  </Card>
+);
+
 export default Card;

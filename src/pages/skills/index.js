@@ -1,6 +1,13 @@
 import React from 'react';
 import styles from './style.module.scss';
-import { CardList } from '../../components/card';
+import { CardList, CardLogos } from '../../components/card';
+import imgFigma from './img/figma.png';
+import imgAe from './img/ae.png';
+import imgAi from './img/ai.png';
+import imgProcreate from './img/procreate.png';
+import imgPs from './img/ps.png';
+import imgSketch from './img/sketch.png';
+import imgIn from './img/invision.png';
 
 const skillProps = {
   title: 'Mes compétences créatives',
@@ -30,22 +37,43 @@ const proProps = {
   ],
 };
 
+const maquettagesProps = {
+  title: 'Outils de maquettage et de prototypage',
+  backgroundColor: 'white',
+  titleColor: 'black',
+  logos: [imgFigma, imgSketch, imgIn],
+};
+
+const createGraphProps = {
+  title: 'Outils de création graphique',
+  backgroundColor: 'white',
+  titleColor: 'black',
+  logos: [imgProcreate, imgPs, imgAi],
+};
+
+const animProps = {
+  title: "Outils d'animation et de motion design",
+  backgroundColor: 'white',
+  titleColor: 'black',
+  logos: [imgProcreate, imgAe],
+};
+
 export default function Skills() {
   return (
     <div className={styles.skills}>
       <div className={styles.grid}>
         <div className={styles.item1}>
-          <CardList {...skillProps} />
+          <CardLogos {...maquettagesProps} />
         </div>
         <div className={styles.item2}>
           <CardList {...skillProps} />
         </div>
 
         <div className={styles.item3}>
-          <CardList {...skillProps} />
+          <CardLogos {...createGraphProps} />
         </div>
         <div className={styles.item4}>
-          <CardList {...skillProps} />
+          <CardLogos {...animProps} />
         </div>
         <div className={styles.item5}>
           <CardList {...proProps} />
