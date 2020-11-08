@@ -3,7 +3,6 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import styles from './style.module.scss';
 import WorkImg from '../../components/work-img';
 import { Tab, Nav, Modal } from 'react-bootstrap';
-import { client } from '../../lib/contentful';
 import ReactMarkdown from 'react-markdown';
 
 function getImageUrlsFromWork(work) {
@@ -31,22 +30,9 @@ function getImageUrlsFromWork(work) {
   return imagesURLS.filter((x) => x);
 }
 
-function Portfolio() {
+function Portfolio({ data }) {
   const [isModalOpen, setModalState] = useState(false);
   const [currentImage, setImage] = useState(null);
-
-  const [data, setData] = useState(null);
-
-  useEffect(() => {
-    client
-      .getEntries({
-        content_type: 'work',
-        include: 1,
-        order: 'fields.pos',
-      })
-      .then((entries) => setData(entries))
-      .catch((err) => console.log(err));
-  }, []);
 
   if (!data || !data.items) {
     return null;

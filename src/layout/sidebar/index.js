@@ -4,7 +4,6 @@ import styles from './style.module.scss';
 import Logo from '../../components/logo';
 import behance from './icons/behance.svg';
 import dribbble from './icons/dribbble.svg';
-import instagram from './icons/instagram.svg';
 import linkedin from './icons/linkedin.svg';
 import profil from './icons/profil.svg';
 import studies from './icons/hat-school.svg';
