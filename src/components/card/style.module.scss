@@ -49,6 +49,7 @@
   font-family: $font-family-sans-serif-title, sans-serif;
   font-size: 16px;
   padding-bottom: 10px;
+  text-align: left;
   display: flex;
   justify-content: space-between;
 
@@ -188,6 +189,17 @@
   .logo {
     height: 60px;
     width: 60px;
+
+    @include media-breakpoint-down(lg) {
+      height: 50px;
+      width: 50px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      height: 40px;
+      width: 40px;
+    }
+
     border-radius: 10px;
   }
 }
