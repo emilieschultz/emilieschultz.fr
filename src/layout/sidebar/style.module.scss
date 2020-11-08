@@ -1,6 +1,29 @@
 @import '../../assets/css/variables';
 @import '~bootstrap/scss/mixins';
 
+.asideMobile {
+  a {
+    color: black;
+  }
+
+  .footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    height: 80px;
+    z-index: 999;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .footerLinkWrapper {
+    }
+  }
+}
+
 .aside {
   width: $aside-width;
   position: fixed;

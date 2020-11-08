@@ -10,7 +10,7 @@ import sphinx from './sphinx.png';
 
 export default function About() {
   return (
-    <Content>
+    <div>
       <div className={styles.about}>
         <h1 className={styles.title}>
           Je m’appelle Emilie, <br /> je suis designer web.
@@ -129,6 +129,6 @@ export default function About() {
           </Carousel.Item>
         </Carousel>
       </aside>
-    </Content>
+    </div>
   );
 }
