@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './style.module.scss';
 import { CardDefault } from '../../components/card';
-
+import { Row, Col } from 'react-bootstrap';
 import profilPic from '../../components/card/img/profil-pic.png';
 import porfolioPic from '../../components/card/img/illustration-portfolio.png';
 import skillsPic from '../../components/card/img/illustration-skills.png';
@@ -52,21 +52,26 @@ const skillsProps = {
 export default function Skills() {
   return (
     <div className={styles.home}>
-      <div className={styles.grid}>
-        <div className={styles.item1}>
-          <CardDefault {...aboutProps} />
-        </div>
-        <div className={styles.item2}>
-          <CardDefault {...formationProps} />
-        </div>
-
-        <div className={styles.item3}>
-          <CardDefault {...portfolioProps} />
-        </div>
-        <div className={styles.item4}>
-          <CardDefault {...skillsProps} />
-        </div>
-      </div>
+      <Row>
+        <Col sm={12} lg={4}>
+          <div className={styles.cardWrapper}>
+            <CardDefault {...aboutProps} />
+          </div>
+          <div className={styles.cardWrapper}>
+            <CardDefault {...formationProps} />
+          </div>
+        </Col>
+        <Col sm={12} lg={4}>
+          <div className={`${styles.cardWrapper} ${styles.large}`}>
+            <CardDefault {...portfolioProps} small={false} />
+          </div>
+        </Col>
+        <Col sm={12} lg={4}>
+          <div className={`${styles.cardWrapper} ${styles.large}`}>
+            <CardDefault {...skillsProps} small={false} />
+          </div>
+        </Col>
+      </Row>
     </div>
   );
 }
