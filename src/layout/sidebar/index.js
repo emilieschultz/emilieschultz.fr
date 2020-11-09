@@ -19,7 +19,7 @@ const ROUTES = [
 
 function SidebarMobile() {
   return (
-    <aside className={styles.asideMobile}>
+    <aside className={`${styles.asideMobile} d-block d-sm-none`}>
       <Link className={styles.logo} to={'/'}>
         <Logo />
       </Link>
