@@ -12,11 +12,13 @@ $aside-right-width: 280px;
 
   @include media-breakpoint-down(lg) {
     padding: 100px 40px;
+    padding-right: 40px + $aside-right-width;
     padding-left: $aside-width + 40px;
   }
 
   @include media-breakpoint-down(sm) {
     padding: 50px 20px;
+    padding-right: 20px + $aside-right-width;
     padding-left: $aside-width + 20px;
   }
 
