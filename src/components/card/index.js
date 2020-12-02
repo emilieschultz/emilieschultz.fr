@@ -13,6 +13,7 @@ function Card({
   backgroundColor = 'white',
   rightContent,
   style = {},
+  className = '',
   linkTo = '',
 }) {
   function Inner() {
@@ -20,7 +21,7 @@ function Card({
       <div
         className={`${styles.container} ${styles[backgroundColor]} ${
           !!rightContent ? styles.hasRightContent : ''
-        }`}
+        } ${className}`}
         style={style}
       >
         <div className={styles.innerContainer}>
@@ -106,7 +107,7 @@ export const CardLogos = ({ logos, ...otherProps }) => (
   <Card {...otherProps}>
     <div className={styles.logosContainer}>
       {logos.map((logo) => (
-        <img src={logo} className={styles.logo}/>
+        <img src={logo} className={styles.logo} />
       ))}
     </div>
   </Card>

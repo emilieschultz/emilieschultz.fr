@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './style.module.scss';
-import { CardList, CardLogos } from '../../components/card';
+import { Row, Col } from 'react-bootstrap';
+import { CardDefault, CardList, CardLogos } from '../../components/card';
 import imgFigma from './img/figma.png';
 import imgAe from './img/ae.png';
 import imgAi from './img/ai.png';
@@ -61,24 +62,30 @@ const animProps = {
 export default function Skills() {
   return (
     <div className={styles.skills}>
-      <div className={styles.grid}>
-        <div className={styles.item1}>
-          <CardLogos {...maquettagesProps} />
-        </div>
-        <div className={styles.item2}>
-          <CardList {...skillProps} />
-        </div>
+      <Row>
+        <Col sm={12} lg={4}>
+          <div className={styles.cardWrapper}>
+            <CardLogos {...maquettagesProps} />
+          </div>
+          <div className={styles.cardWrapper}>
+            <CardList {...skillProps} />
+          </div>
+        </Col>
+        <Col sm={12} lg={4}>
+          <div className={`${styles.cardWrapper}`}>
+            <CardLogos {...createGraphProps} />
+          </div>
 
-        <div className={styles.item3}>
-          <CardLogos {...createGraphProps} />
-        </div>
-        <div className={styles.item4}>
-          <CardLogos {...animProps} />
-        </div>
-        <div className={styles.item5}>
-          <CardList {...proProps} />
-        </div>
-      </div>
+          <div className={`${styles.cardWrapper}`}>
+            <CardLogos {...animProps} />
+          </div>
+        </Col>
+        <Col sm={12} lg={4}>
+          <div className={`${styles.cardWrapper} ${styles.large}`}>
+            <CardList {...proProps} />
+          </div>
+        </Col>
+      </Row>
     </div>
   );
 }

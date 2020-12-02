@@ -17,9 +17,33 @@ const ROUTES = [
   { path: '/competences', title: 'Compétences', icon: skills },
 ];
 
-export default function Sidebar() {
+function SidebarMobile() {
   return (
-    <aside className={styles.aside}>
+    <aside className={`${styles.asideMobile} d-block d-sm-none`}>
+      <Link className={styles.logo} to={'/'}>
+        <Logo />
+      </Link>
+
+      <footer className={styles.footer}>
+        {ROUTES.map((route) => (
+          <div key={route.path} className={styles.footerLinkWrapper}>
+            <NavLink
+              to={route.path}
+              className={styles.nav}
+              activeClassName={styles.activenav}
+            >
+              {route.title} <img src={route.icon} width="15" alt="" />
+            </NavLink>
+          </div>
+        ))}
+      </footer>
+    </aside>
+  );
+}
+
+function SidebarDesktop() {
+  return (
+    <aside className={`${styles.aside} d-none d-sm-flex`}>
       <div className={styles.header}>
         <Link className={styles.logo} to={'/'}>
           <Logo />
@@ -57,5 +81,14 @@ export default function Sidebar() {
         {/*<img src={instagram} width="20" alt="" />*/}
       </div>
     </aside>
+  );
+}
+
+export default function Sidebar() {
+  return (
+    <div style={{ position: 'relative' }}>
+      <SidebarDesktop />
+      <SidebarMobile />
+    </div>
   );
 }

@@ -10,7 +10,54 @@ import sphinx from './sphinx.png';
 
 export default function About() {
   return (
-    <Content>
+    <div>
+      <aside className={`${styles.asideRight} carousel-h-100`}>
+        <Carousel className={styles.carousel}>
+          <Carousel.Item>
+            <div className={styles.carouselItem}>
+              <img src={otter} alt="" className="d-block w-100" />
+              <p className={styles.p}>
+                Si j’étais un animal je serais une <b>loutre</b>. Symbole de
+                l'énergie féminine, de l'<b>efficacité</b>, de la <b>joie</b> et
+                du <b>partage</b>.
+              </p>
+            </div>
+          </Carousel.Item>
+
+          <Carousel.Item>
+            <div className={styles.carouselItem}>
+              <img src={tournesol} alt="" className="d-block w-100" />
+              <p className={styles.p}>
+                Si j’étais une fleur, je serais un <b>tournesol</b>. Symbole de{' '}
+                <b>joie</b>, emprunt de <b>positivité</b>, toujours tourné vers
+                le soleil.
+              </p>
+            </div>
+          </Carousel.Item>
+
+          <Carousel.Item>
+            <div className={styles.carouselItem}>
+              <img src={water} alt="" className="d-block w-100" />
+              <p className={styles.p}>
+                Si j'étais un élément, je serais l'<b>eau</b>. Symbole d'
+                <b>intuition</b>, de <b>sensibilité</b>. Il prend la forme du
+                contenant dans lequel il se trouve.
+              </p>
+            </div>
+          </Carousel.Item>
+          <Carousel.Item>
+            <div className={styles.carouselItem}>
+              <img src={sphinx} alt="" className="d-block w-100" />
+              <p className={styles.p}>
+                Si j'étais une créature imaginaire, je serais le <b>sphinx</b>.
+                Parce que je le trouve cool, mais aussi car il symbolise la{' '}
+                <b>quête du savoir</b>.
+              </p>
+            </div>
+          </Carousel.Item>
+        </Carousel>
+      </aside>
+
       <div className={styles.about}>
         <h1 className={styles.title}>
           Je m’appelle Emilie, <br /> je suis designer web.
@@ -83,52 +130,6 @@ export default function About() {
           <b>nouvelles responsabilités</b>.
         </p>
       </div>
-      <aside className={`${styles.asideRight} carousel-h-100`}>
-        <Carousel className={styles.carousel}>
-          <Carousel.Item>
-            <div className={styles.carouselItem}>
-              <img src={otter} alt="" className="d-block w-100" />
-              <p className={styles.p}>
-                Si j’étais un animal je serais une <b>loutre</b>. Symbole de
-                l'énergie féminine, de l'<b>efficacité</b>, de la <b>joie</b> et
-                du <b>partage</b>.
-              </p>
-            </div>
-          </Carousel.Item>
-
-          <Carousel.Item>
-            <div className={styles.carouselItem}>
-              <img src={tournesol} alt="" className="d-block w-100" />
-              <p className={styles.p}>
-                Si j’étais une fleur, je serais un <b>tournesol</b>. Symbole de{' '}
-                <b>joie</b>, emprunt de <b>positivité</b>, toujours tourné vers
-                le soleil.
-              </p>
-            </div>
-          </Carousel.Item>
-
-          <Carousel.Item>
-            <div className={styles.carouselItem}>
-              <img src={water} alt="" className="d-block w-100" />
-              <p className={styles.p}>
-                Si j'étais un élément, je serais l'<b>eau</b>. Symbole d'
-                <b>intuition</b>, de <b>sensibilité</b>. Il prend la forme du
-                contenant dans lequel il se trouve.
-              </p>
-            </div>
-          </Carousel.Item>
-          <Carousel.Item>
-            <div className={styles.carouselItem}>
-              <img src={sphinx} alt="" className="d-block w-100" />
-              <p className={styles.p}>
-                Si j'étais une créature imaginaire, je serais le <b>sphinx</b>.
-                Parce que je le trouve cool, mais aussi car il symbolise la{' '}
-                <b>quête du savoir</b>.
-              </p>
-            </div>
-          </Carousel.Item>
-        </Carousel>
-      </aside>
-    </Content>
+    </div>
   );
 }

@@ -7,30 +7,40 @@ $padding: 100px;
   padding: 100px;
   padding-left: $aside-width + $padding;
   text-align: justify;
-  height: 100%;
+
+  @include media-breakpoint-down(lg) {
+    padding: 100px 40px;
+    padding-left: $aside-width + 40px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding: 50px 20px;
+    padding-left: $aside-width + 20px;
+  }
+
+  @include media-breakpoint-only(xs) {
+    padding: 20px;
+    padding-left: 20px;
+    padding-bottom: $footer-xs-height;
+  }
 }
 
-.grid {
-  display: grid;
-  height: 100%;
-  grid-gap: 30px;
-  grid-template-rows: repeat(2, auto);
-  grid-template-columns: repeat(3, 1fr);
-}
+.cardWrapper {
+  $height-lg: 280px;
+  $height-down-lg: 240px;
 
-.item1 {
-  grid-column: 1;
-  grid-row: 1;
-}
-.item2 {
-  grid-column: 1;
-  grid-row: 2;
-}
-.item3 {
-  grid-row-start: 1;
-  grid-row-end: 3;
-}
-.item4 {
-  grid-row-start: 1;
-  grid-row-end: 3;
+  height: $height-lg;
+  margin-bottom: 20px;
+
+  @include media-breakpoint-down(lg) {
+    height: $height-down-lg;
+  }
+
+  &.large {
+    height: 2 * $height-lg + 20px;
+
+    @include media-breakpoint-down(lg) {
+      height: 2 * $height-down-lg + 20px;
+    }
+  }
 }

@@ -7,5 +7,10 @@ $padding: 100px;
   padding: 100px;
   padding-left: $aside-width + $padding;
   text-align: justify;
-}
 
+  @include media-breakpoint-only(xs) {
+    padding: 20px;
+    padding-left: 20px;
+    padding-bottom: $footer-xs-height;
+  }
+}

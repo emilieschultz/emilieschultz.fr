@@ -8,7 +8,12 @@ $padding: 70px;
   padding-left: $aside-width + $padding;
   padding-top: 50px;
   text-align: justify;
-  height: 100%;
+
+  @include media-breakpoint-only(xs) {
+    padding: 20px;
+    padding-left: 20px;
+    padding-bottom: $footer-xs-height;
+  }
 }
 
 .workDescription {
@@ -18,11 +23,11 @@ $padding: 70px;
 }
 
 .modal {
-  background-color: black;
+  //background-color: black;
   :global {
     .modal-dialog {
       @include media-breakpoint-up(sm) {
-        max-width: 700px;
+        max-width: 600px;
       }
     }
 
